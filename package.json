@@ -1,0 +1,51 @@
+{
+  "name": "rxjs-use-selector",
+  "version": "0.1.0",
+  "description": "useSelector react hook for RxJS observables",
+  "main": "index.js",
+  "private": false,
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "hooks",
+    "rxjs",
+    "selector",
+    "pg-boss"
+  ],
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn lint && yarn test"
+    }
+  },
+  "dependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "husky": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2"
+  },
+  "engines": {
+    "node": ">= 8.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitor-infotech-oss/rxjs-use-selector.git"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.0.0"
+  }
+}
