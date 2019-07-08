@@ -33,3 +33,5 @@ export const useSelector = (selector, defaultValue) => {
 
   return selectedState;
 };
+
+export default useSelector;

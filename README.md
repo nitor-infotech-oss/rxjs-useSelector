@@ -1,17 +1,18 @@
-# React, Akita, React-Hooks, TypeScript, ES6 App
+# useSelector Hook for RxJS Observables
 
-This app is using [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/) and ES6, purely based on [React Hooks](https://reactjs.org/docs/hooks-intro.html) (Functional Components)
+Small library to use RxJs observables with [React Hooks](https://reactjs.org/docs/hooks-intro.html) in [React](https://reactjs.org/) Functional Components.
 
-Using TypeScript for connected functional components, UI components are using ESNext (ES6). [Akita](https://netbasal.gitbook.io/akita/) used for state management
+# Usage
 
-You can use [Redux-Devtools](https://github.com/zalmoxisus/redux-devtools-extension) to monitor application state
+```js
+  import React from 'react';
+  import useSelector from 'rxjs-use-selector';
 
-Using [eslint](https://eslint.org/) and [tslint](https://palantir.github.io/tslint/) for linting with [prettier](https://prettier.io/). Linting and unit tests are integrated with [git-hooks](https://githooks.com/)
+  export const User = () => {
+    const user = useSelector(
+      <observable-provider>.currentUser, {}
+    );
+  }
+```
 
-## Run on your local
-
-Clone the repository, in the project directory, you can run:
-
-### Run `yarn install` or `yarn` to install dependencies
-
-### Run `yarn start` to start the application
+For detailed usage refer - [Example Application](https://github.com/nitor-infotech-oss/akita-react-hooks-ts)
