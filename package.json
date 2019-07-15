@@ -34,11 +34,13 @@
       "pre-push": "yarn lint && yarn test"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.14"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "eslint": "^6.0.1",
@@ -49,8 +51,8 @@
     "lint-staged": "^8.2.0",
     "prettier": "^1.18.2",
     "react": "^16.8.0",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
   },
   "engines": {
     "node": ">= 8.x.x"
