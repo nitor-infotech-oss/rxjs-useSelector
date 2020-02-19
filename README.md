@@ -1,5 +1,7 @@
 # useSelector Hook for RxJS Observables
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nitor-infotech-oss/rxjs-useSelector.svg)](https://greenkeeper.io/)
+
 Small library to use RxJs observables with [React Hooks](https://reactjs.org/docs/hooks-intro.html) in [React](https://reactjs.org/) Functional Components.
 
 # Usage
